@@ -10,7 +10,7 @@ from datetime import date
 class Service(socketserver.BaseRequestHandler):
     def ask_creds(self):
 
-        self.send(b"Welcome To Yurivich's Messaging System... Sign Up to Begin")
+        self.send(b"Welcome To Yurivich's Messaging System... This program is still in development, but if you want to contribute, here is my page : https://github.com/yurivich/Yurivich-s-Messaging-System / Thank You :D")
         first = self.receive(b"First Name : ").decode("utf-8").strip()
         if first == "":
             self.send(b"First Name is required!")
