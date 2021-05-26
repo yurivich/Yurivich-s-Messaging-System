@@ -53,7 +53,7 @@ class Service(socketserver.BaseRequestHandler):
             time.sleep(2)
             self.send(
                 b"Thank you for registering... Your account will be active shortly...")
-            # Saving User's Account Details | We'll create the accounts later
+            # Saving User's Account Details | We'll create the accounts later | Saving these on our rocket container
             file = open("requests.txt", "a")
             input = ["First Name : "+first+" Last Name : "+last +
                      " Email : "+email+" Password : "+password_input+" Age ", calc]
