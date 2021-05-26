@@ -54,7 +54,7 @@ class Service(socketserver.BaseRequestHandler):
             self.send(
                 b"Thank you for registering... Your account will be active shortly...")
             # Saving User's Account Details | We'll create the accounts later
-            file = open("requests.txt", "w")
+            file = open("requests.txt", "a")
             input = ["First Name : "+first+" Last Name : "+last +
                      " Email : "+email+" Password : "+password_input+" Age ", calc]
             file.writelines(str(input))
