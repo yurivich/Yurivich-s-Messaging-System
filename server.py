@@ -6,7 +6,6 @@ import sys
 import threading
 from datetime import date
 
-
 class Service(socketserver.BaseRequestHandler):
     def ask_creds(self):
 
